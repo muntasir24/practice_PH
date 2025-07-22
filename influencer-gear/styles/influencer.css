@@ -61,11 +61,13 @@ gap: 44px;
 }
 .header-title{
     font-weight: 700;
-    font-size: 52px;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    /* font-size: 3.25rem; */
+    
 }
 .header-description {
 font-weight: 600;
-font-size: 16px;
+font-size: 1rem;
 margin: 20px 0px;
 }
 .header-info{
@@ -77,6 +79,7 @@ margin: 20px 0px;
 .header-container{
     justify-content: space-between;
     margin-top: 60px;
+    align-items: center;
 }
 .header-img{
     /* border: 3px solid tan; */
@@ -96,4 +99,29 @@ width: 100%;
     max-width: 90%;
    
    
+}
+
+@media screen and (max-width:576px) {
+    .navbar, .nav-ul, .header-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+    }
+    .header-container{
+        flex-direction: column-reverse;
+
+    }
+    .header-info{
+        text-align: center;
+        margin-top: 5px;
+    }
+    .header-img{
+        margin: 0 52px;
+    }
+    .btn-primary{
+        display: inline-block;
+        text-align: center;
+    }
+    
 }
