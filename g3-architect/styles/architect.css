@@ -268,7 +268,7 @@ height: auto;
 }
 
 @media screen and (min-width:577px ) and (max-width:950px) {
-    .teams{
+    .teams,.features{
         flex-direction: column;
     }
         .team-info {
