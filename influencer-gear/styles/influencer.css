@@ -207,6 +207,39 @@ header {
   gap: 10px;
 }
 
+.footer{
+    margin-top: 100px;
+    background-color: #0a0826;
+    padding: 50px 0;
+}
+.footer-heading{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.copyright{
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom:17px ;
+    margin-top: 10px;
+}
+.icon{
+    gap: 16px;
+    color: white;
+}
+.footer-container{
+    max-width: 265px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.icon{
+    justify-content: center;
+   
+}
+
+
 /* media query */
 
 @media screen and (max-width: 576px) {
@@ -254,6 +287,9 @@ header {
   .feature-image {
     width: 86%;
     height: 45%;
+  }
+  .footer{
+    margin-top: clamp(200px ,60vw, 250px);
   }
 }
 @media screen and (min-width: 576px) and (max-width: 900px) {
