@@ -1,9 +1,5 @@
 # Milestone 2 Concept
 
-This repository contains code and practice exercises related to **Milestone 2** of the Web Development Learning Path.
-
----
-
 ## 📖 Description
 
 In this milestone, the focus is on mastering **core frontend concepts**, including:
@@ -25,8 +21,4 @@ Explore the live version of the project here:
 
 ---
 
-## 🛠 How to Use
 
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/muntasir24/practice_PH.git
