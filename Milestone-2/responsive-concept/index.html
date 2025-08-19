@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Responsiveness Examples</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #f0f0f5;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 3rem 1rem;
+    }
+    main {
+      background: rgba(255 255 255 / 0.1);
+      border-radius: 16px;
+      padding: 2rem 3rem;
+      max-width: 720px;
+      width: 100%;
+      box-shadow: 0 8px 32px rgb(0 0 0 / 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    h1 {
+      margin-bottom: 2rem;
+      font-weight: 600;
+      font-size: 2.5rem;
+      text-align: center;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    li {
+      background: rgba(255 255 255 / 0.15);
+      margin-bottom: 1.3rem;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: background 0.3s ease;
+    }
+    li:hover {
+      background: rgba(255 255 255 / 0.3);
+    }
+    a {
+      color: #fffbf7;
+      font-weight: 600;
+      font-size: 1.25rem;
+      text-decoration: none;
+      user-select: none;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #ffd369;
+    }
+    p {
+      margin-top: 0.3rem;
+      font-size: 0.92rem;
+      line-height: 1.4;
+      color: #e0dfe6;
+      user-select: text;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CSS Responsiveness Examples</h1>
+    <ul>
+      <li>
+        <a href="border-box.html" target="_blank" rel="noopener">Box Sizing: Border-box vs Content-box</a>
+        <p>Understand how <code>box-sizing</code> changes element width calculation for layouts.</p>
+      </li>
+      <li>
+        <a href="clamp.html" target="_blank" rel="noopener">Fluid Sizing with <code>clamp()</code></a>
+        <p>Learn to create smooth, bounded sizes for fonts and elements without media queries.</p>
+      </li>
+      <li>
+        <a href="clamp_rem_px.html" target="_blank" rel="noopener">Clamp with rem and px Units</a>
+        <p>Combine relative and absolute units inside <code>clamp()</code> for scalable typography.</p>
+      </li>
+      <li>
+        <a href="flex-1.html" target="_blank" rel="noopener">Flexbox <code>flex: 1</code> Growth & Shrink</a>
+        <p>See how flex items evenly grow and shrink inside flexible containers.</p>
+      </li>
+      <li>
+        <a href="max-width.html" target="_blank" rel="noopener">Controlling Layout with <code>max-width</code></a>
+        <p>Prevent overflow and control element width on different screen sizes.</p>
+      </li>
+      <li>
+        <a href="overflow.html" target="_blank" rel="noopener">Handling Overflow in CSS</a>
+        <p>Explore CSS properties to manage content overflow scenarios cleanly.</p>
+      </li>
+      <li>
+        <a href="responsive_padding.html" target="_blank" rel="noopener">Responsive Padding Techniques</a>
+        <p>Adjust padding dynamically to maintain good spacing across devices.</p>
+      </li>
+      <li>
+        <a href="advanced.html" target="_blank" rel="noopener">Advanced Responsive Demo</a>
+        <p>A comprehensive example featuring fluid typography, grid auto-fit, flexbox sticky footer, container queries, and responsive images.</p>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>

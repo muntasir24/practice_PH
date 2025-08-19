@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Padding</title>
+  <style>
+    .box {
+      background-color: #e0f7fa;
+      border: 2px solid #00796b;
+      margin: 2rem;
+      font-size: 1.2rem;
+    }
+
+    .vw-padding {
+      padding: 4vw;
+    }
+
+    .percent-padding {
+      padding: 4%;
+    }
+
+    .clamp-padding {
+      padding: clamp(1rem, 4vw, 3rem);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🔹 Padding using <code>4vw</code></h2>
+  <div class="box vw-padding">Padding scales with screen width (vw).</div>
+
+  <h2>🔹 Padding using <code>4%</code></h2>
+  <div class="box percent-padding">Padding is 4% of the parent container.</div>
+
+  <h2>🔹 Padding using <code>clamp(1rem, 4vw, 3rem)</code></h2>
+  <div class="box clamp-padding">Padding is fluid but limited in range.</div>
+
+</body>
+</html>
